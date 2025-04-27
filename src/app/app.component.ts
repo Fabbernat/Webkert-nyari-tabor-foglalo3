@@ -8,5 +8,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Webkert-nyari-tabor-foglalo2';
+  title = 'Webkert-nyari-tabor-foglalo3';
 }

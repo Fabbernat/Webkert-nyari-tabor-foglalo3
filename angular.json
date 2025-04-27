@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Webkert-nyari-tabor-foglalo2": {
+    "Webkert-nyari-tabor-foglalo3": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/webkert-nyari-tabor-foglalo2",
+            "outputPath": "dist/webkert-nyari-tabor-foglalo3",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Webkert-nyari-tabor-foglalo2:build:production"
+              "buildTarget": "Webkert-nyari-tabor-foglalo3:build:production"
             },
             "development": {
-              "buildTarget": "Webkert-nyari-tabor-foglalo2:build:development"
+              "buildTarget": "Webkert-nyari-tabor-foglalo3:build:development"
             }
           },
           "defaultConfiguration": "development"
