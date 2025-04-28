@@ -17,6 +17,5 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-isLoggedIn = false;
-
+isLoggedIn = false; // majd a isLoggedIn = LoginComponent._isLoggedIn; logikával lesz megvalósítva
 }
