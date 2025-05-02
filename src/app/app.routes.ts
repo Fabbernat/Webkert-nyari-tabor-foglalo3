@@ -2,26 +2,28 @@ import { Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { GalleryComponent } from './shared/gallery/gallery.component';
 import { HomeComponent } from './pages/home/home.component';
+import { RegisterComponent } from './core/components/register/register.component';
+import { LoginComponent } from './core/components/login/login.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'app', component: AppComponent },
     {path: 'gallery', component: GalleryComponent},
-
-/* TODO ng g c these */
-//   { path: 'home', component: HomeComponent },
-//   { path: 'camp', component: CampComponent },
-//   { path: 'camps', component: CampComponent },
-//   { path: 'camps/detail', component: CampDetailsComponent },
-//   { path: 'taborok', redirectTo: 'camps', pathMatch: 'full' },
-//   { path: 'taborok/detail', redirectTo: 'camps/detail', pathMatch: 'full' },
+    
+      // Auth routes
+      { path: 'login', component: LoginComponent },
+      { path: 'bejelentkezes', redirectTo: 'login', pathMatch: 'full' },
+      { path: 'signup', component: RegisterComponent },
+      { path: 'regisztracio', redirectTo: 'signup', pathMatch: 'full' },
+      { path: 'logout', redirectTo: '', pathMatch: 'full' }, // This should be handled by auth service
+    //   { path: 'home', component: HomeComponent },
+    //   { path: 'camp', component: CampComponent },
+    //   { path: 'camps', component: CampComponent },
+    //   { path: 'camps/detail', component: CampDetailsComponent },
+    //   { path: 'taborok', redirectTo: 'camps', pathMatch: 'full' },
+    //   { path: 'taborok/detail', redirectTo: 'camps/detail', pathMatch: 'full' },
+    /* TODO ng g c these */
   
-//   // Auth routes
-//   { path: 'login', component: LoginComponent },
-//   { path: 'bejelentkezes', redirectTo: 'login', pathMatch: 'full' },
-//   { path: 'signup', component: RegisterComponent },
-//   { path: 'regisztracio', redirectTo: 'signup', pathMatch: 'full' },
-//   { path: 'logout', redirectTo: '', pathMatch: 'full' }, // This should be handled by auth service
   
 //   // User routes
 //   { path: 'profile', component: UserProfileComponent, canActivate: [AuthGuard] },
