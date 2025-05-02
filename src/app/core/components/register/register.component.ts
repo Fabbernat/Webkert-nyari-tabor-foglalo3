@@ -3,9 +3,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from '../../../../core/services/auth.service';
-import UserType, { OrganizerType } from '../../../../shared/models/user/user.component';
 import { CommonModule } from '@angular/common';
+import UserType, { OrganizerType } from '../../../shared/models/user/user.component';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-register',

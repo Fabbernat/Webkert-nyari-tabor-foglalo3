@@ -31,17 +31,17 @@
       <nav class="main-nav">
         <ng-container *ngIf="isLoggedIn; else loggedOutNav">
           <ul class="nav-links block">
-            <li><a href="/camps" hrefActive="active">Táborok böngészése</a></li>
-            <li><a href="/profile" hrefActive="active">Profilom</a></li>
-            <li><a href="/logout" hrefActive="active">Kijelentkezés</a></li>
+            <li><a [routerLink]="/camps" routerLinkActive="active">Táborok böngészése</a></li>
+            <li><a [routerLink]="/profile" routerLinkActive="active">Profilom</a></li>
+            <li><a [routerLink]="/logout" routerLinkActive="active">Kijelentkezés</a></li>
           </ul>
         </ng-container>
 
         <ng-template #loggedOutNav>
           <ul class="nav-links block">
-            <li><a href="/camps" hrefActive="active">Táborok böngészése</a></li>
-            <li><a href="/signup" hrefActive="active">Regisztráció</a></li>
-            <li><a href="/login" hrefActive="active">Bejelentkezés</a></li>
+            <li><a [routerLink]="/camps" routerLinkActive="active">Táborok böngészése</a></li>
+            <li><a [routerLink]="/signup" routerLinkActive="active">Regisztráció</a></li>
+            <li><a [routerLink]="/login" routerLinkActive="active">Bejelentkezés</a></li>
           </ul>
         </ng-template>
       </nav>
@@ -60,12 +60,12 @@
       <h2 class="text-xl mb-6">Találd meg a tökéletes tábori élményt gyermeked számára!</h2>
 
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="/regisztracio"
+        <a [routerLink]="/regisztracio"
           class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition-colors">
           Regisztráció
         </a>
         <hr>
-        <a href="/bejelentkezes"
+        <a [routerLink]="/bejelentkezes"
           class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-6 rounded-lg text-lg transition-colors">
           Bejelentkezés
         </a>
@@ -83,7 +83,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="bg-white p-4 rounded-lg shadow">
             <h3 class="font-bold">A kiemelt táborok itt fognak megjelenni</h3>
-            <a href="/featured-camps" class="text-blue-600 hover:underline">Összes kiemelt tábor megtekintése</a>
+            <a [routerLink]="/featured-camps" class="text-blue-600 hover:underline">Összes kiemelt tábor megtekintése</a>
           </div>
         </div>
       </article>
@@ -94,7 +94,7 @@
     <article class="large-margin">
       <h2 class="text-2xl font-bold mb-4">Tábor típusok felfedezése</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <a href="/camp-types" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
+        <a [routerLink]="/camp-types" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
           Összes tábor típus megtekintése
         </a>
       </div>
@@ -109,10 +109,10 @@
         <div class="bg-white p-6 rounded-lg shadow">
           <h3 class="font-bold text-lg mb-3">Fő navigáció</h3>
           <ul class="space-y-2">
-            <li><a href="/home" class="text-blue-600 hover:underline">Kezdőlap</a></li>
-            <li><a href="/taborok" class="text-blue-600 hover:underline">Táborlista</a></li>
-            <li><a href="/profil" class="text-blue-600 hover:underline">Profilom</a></li>
-            <li><a href="/jelentkezesek" class="text-blue-600 hover:underline">Jelentkezéseim</a></li>
+            <li><a [routerLink]="/home" class="text-blue-600 hover:underline">Kezdőlap</a></li>
+            <li><a [routerLink]="/taborok" class="text-blue-600 hover:underline">Táborlista</a></li>
+            <li><a [routerLink]="/profil" class="text-blue-600 hover:underline">Profilom</a></li>
+            <li><a [routerLink]="/jelentkezesek" class="text-blue-600 hover:underline">Jelentkezéseim</a></li>
           </ul>
         </div>
 
@@ -120,9 +120,9 @@
         <div class="bg-white p-6 rounded-lg shadow">
           <h3 class="font-bold text-lg mb-3">Felhasználói vezérlőpultok</h3>
           <ul class="space-y-2">
-            <li><a href="/szulo/dashboard" class="text-blue-600 hover:underline">Szülői vezérlőpult</a></li>
-            <li><a href="/pedagogus/dashboard" class="text-blue-600 hover:underline">Pedagógus vezérlőpult</a></li>
-            <li><a href="/onkentes/dashboard" class="text-blue-600 hover:underline">Önkéntes vezérlőpult</a></li>
+            <li><a [routerLink]="/szulo/dashboard" class="text-blue-600 hover:underline">Szülői vezérlőpult</a></li>
+            <li><a [routerLink]="/pedagogus/dashboard" class="text-blue-600 hover:underline">Pedagógus vezérlőpult</a></li>
+            <li><a [routerLink]="/onkentes/dashboard" class="text-blue-600 hover:underline">Önkéntes vezérlőpult</a></li>
           </ul>
         </div>
 
@@ -130,11 +130,11 @@
         <div class="bg-white p-6 rounded-lg shadow">
           <h3 class="font-bold text-lg mb-3">Adminisztráció</h3>
           <ul class="space-y-2">
-            <li><a href="/admin/dashboard" class="text-blue-600 hover:underline">Admin vezérlőpult</a></li>
-            <li><a href="/admin/taborok" class="text-blue-600 hover:underline">Táborok kezelése</a></li>
-            <li><a href="/user-manager" class="text-blue-600 hover:underline">Felhasználók kezelése</a></li>
-            <li><a href="/stats-dashboard" class="text-blue-600 hover:underline">Statisztikák</a></li>
-            <li><a href="/camp-location-manager" class="text-blue-600 hover:underline">Helyszínek kezelése</a></li>
+            <li><a [routerLink]="/admin/dashboard" class="text-blue-600 hover:underline">Admin vezérlőpult</a></li>
+            <li><a [routerLink]="/admin/taborok" class="text-blue-600 hover:underline">Táborok kezelése</a></li>
+            <li><a [routerLink]="/user-manager" class="text-blue-600 hover:underline">Felhasználók kezelése</a></li>
+            <li><a [routerLink]="/stats-dashboard" class="text-blue-600 hover:underline">Statisztikák</a></li>
+            <li><a [routerLink]="/camp-location-manager" class="text-blue-600 hover:underline">Helyszínek kezelése</a></li>
           </ul>
         </div>
       </div>
@@ -145,13 +145,13 @@
     <section class="large-margin">
       <h2 class="text-2xl font-bold mb-4">Egyéb funkciók</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <a href="/dokumentum-feltoltes" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
+        <a [routerLink]="/dokumentum-feltoltes" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
           Dokumentum feltöltése
         </a>
-        <a href="/create-camp" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
+        <a [routerLink]="/create-camp" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
           Tábor létrehozása
         </a>
-        <a href="/edit-profile" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
+        <a [routerLink]="/edit-profile" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
           Profil szerkesztése
         </a>
       </div>
@@ -162,12 +162,12 @@
       <h2 class="text-2xl font-bold mb-4">Készen állsz, hogy megtaláld a tökéletes tábort?</h2>
       <p class="mb-6">Böngéssz táboraink között vagy hozz létre egy fiókot a kezdéshez.</p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="/taborok"
+        <a [routerLink]="/taborok"
           class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors">
           Táborok böngészése
         </a>
         <hr>
-        <a href="/regisztracio"
+        <a [routerLink]="/regisztracio"
           class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
           Fiók létrehozása
         </a>
