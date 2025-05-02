@@ -247,3 +247,54 @@ h1 {
   .nav-links a {
     text-decoration: none;
   }
+
+ /* Additional CSS to enhance the navigation */
+  .site-logo {
+    width: 96px;
+    height: auto;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+
+  .site-title {
+    color: #285fd6;
+    margin-bottom: 20px;
+  }
+
+  .header-toolbar {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .nav-links li {
+    margin-bottom: 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links li:hover {
+    transform: translateY(-5px);
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 12px;
+    font-size: 1.1rem;
+  }
+
+  .nav-links .active {
+    background-color: #002b80;
+    box-shadow: 0 0 20px #ffff00cc, 0 0 10px #ffeb3b;
+  }

@@ -16,6 +16,14 @@ import { HomeComponent } from './pages/home/home.component';
 export class AppComponent {
   logout: any;
   title = 'Webkert-nyari-tabor-foglalo3';
+  loginPopupVisible = false;
+
+  showLoginPopup() {
+    this.loginPopupVisible = true;
+    setTimeout(() => {
+      this.loginPopupVisible = false;
+    }, 2000); // 2 másodperc után eltűnik
+  }
 }
 
 // Import the functions you need from the SDKs you need
