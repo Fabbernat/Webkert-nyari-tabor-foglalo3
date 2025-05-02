@@ -14,6 +14,7 @@ import { HomeComponent } from './pages/home/home.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+logout: any;
   title = 'Webkert-nyari-tabor-foglalo3';
 }
 

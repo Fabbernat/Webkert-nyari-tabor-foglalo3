@@ -1,10 +1,19 @@
 <!-- C:\VSCodeProjects\Webkert-nyari-tabor-foglalo\Webkert-nyari-tabor-foglalo\src\app\app.component.html -->
 <section>
+  <nav class="navbar">
+    <button routerLink="/register">Regisztráció</button>
+    <button routerLink="/login">Bejelentkezés</button>
+    <button (click)="logout()">Kijelentkezés</button>
+    <button routerLink="/camps/create">Tábor létrehozása</button>
+    <button routerLink="/camps">Táborok böngészése</button>
+    <button routerLink="/camps/edit">Tábor módosítása</button>
+    <button routerLink="/camps/delete">Tábor törlése</button>
+  </nav>
   <div class="site-header">
 
     <div color="primary" class="header-toolbar">
       <div class="logo-container block">
-        <img src="../web/favicon-96.png" alt="Nyári Tábor Foglaló" class="site-logo">
+        <img src="web/favicon-96.png" alt="Nyári Tábor Foglaló" class="site-logo">
         <h1 class="site-title">Üdvözlünk a Nyári Tábor Foglaló honlapján!</h1>
         <br>
         <h2>Kezdőlap</h2>
