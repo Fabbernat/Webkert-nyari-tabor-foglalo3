@@ -81,7 +81,7 @@ h1 {
       color: darkblue;
     }
     &:hover {
-      color: #555; /* Slight color change on hover for better UX */
+      color: #ffd900; /* Slight color change on hover for better UX */
     }
   }
   .main-nav {
@@ -214,7 +214,7 @@ h1 {
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
-    padding-bottom: 1rem;
+    padding: 1rem;
   }
   .gallery-card img {
     width: 100%;
@@ -224,11 +224,11 @@ h1 {
   .gallery-card h3 {
     font-size: 1.2rem;
     margin-top: 1rem;
-    color: #2d3748;
+    color: hsl(56, 100%, 50%);
   }
   .gallery-card p {
     font-size: 0.95rem;
-    color: #4a5568;
+    color: #b7b92a;
     padding: 0 1rem;
   }
   .block{
